@@ -49,7 +49,6 @@ namespace unirestt
         HttpMethod = method;
         Headers = new Dictionary<string, string>();
         Body = new MultipartFormDataContent();
-
       }
 
       public HttpRequest header(string name, string value)

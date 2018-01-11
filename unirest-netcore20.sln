@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2020
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unirest-netcore20", "unirest-netcore20\unirest-netcore20.csproj", "{A1372DAD-9116-497A-917B-F9BD87205499}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "unirest-netcore20", "unirest-netcore20\unirest-netcore20.csproj", "{A1372DAD-9116-497A-917B-F9BD87205499}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "unirest-netcore20-tests", "unirest-netcore20-tests\unirest-netcore20-tests.csproj", "{FEA3BEF9-6850-4151-9D85-EBAFAE0CDAE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "unirest-netcore20-tests", "unirest-netcore20-tests\unirest-netcore20-tests.csproj", "{FEA3BEF9-6850-4151-9D85-EBAFAE0CDAE9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -44,16 +44,20 @@ namespace unirest
       var client = new HttpClient();
       var msg = new HttpRequestMessage(request.HttpMethod, request.URL);
 
-      foreach (var header in request.Headers)
-      {
-        msg.Headers.Add(header.Key, header.Value);
-      }
-
       if (request.Body.Any())
       {
         msg.Content = request.Body;
       }
 
+      foreach (var header in request.Headers)
+      {
+        if (header.Key == "Content-Type")
+        {
+          msg.Content.Headers.ContentType = new MediaTypeHeaderValue(header.Value);
+          continue;
+        }
+        msg.Headers.Add(header.Key, header.Value);
+      }
       return client.SendAsync(msg);
     }
   }
